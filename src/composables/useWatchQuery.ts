@@ -27,7 +27,7 @@ export default function useWatchQuery(
     (value) => {
       onChangeQuery(value);
     },
-    { immediate: true, deep: true }
+    { immediate: true }
   );
 
   return { setQuery, currentQuery: route.query };
