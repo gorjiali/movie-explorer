@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0;
+  list-style-type: none;
+  padding: 2rem 0;
+  justify-content: center;
+
+  &__item {
+    display: flex;
+    gap: 0.4rem;
+
+    &__btn {
+      text-align: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      border: 1px solid lightgray;
+      cursor: pointer;
+
+      &--active {
+        background-color: royalblue;
+        color: #fff;
+      }
+    }
+  }
+}
