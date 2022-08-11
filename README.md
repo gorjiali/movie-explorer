@@ -1,16 +1,15 @@
-### Movie Explorer App With Vue 3 + TypeScript + Vite
+# Movie Explorer App With Vue 3 + TypeScript + Vite
 
-<hr/>
 
-####🚨 Important
+### 🚨 Important
 
 - The api endpoint used in this project isn't normally available in our country, so to use the project, please turn on your vpn. (without vpn you get an error after `timeout: 10000`)
 - In pagination section, because of api limitiation, we could not access pages above 500, so a manual limit was placed on the number of totalPages (If the number of pages specified by the server was higher than 500).
 
-####online Demo
-[Movie-Explorer]("https://movie-explorer-sigma.vercel.app/")
+### 📀 online Demo
+[Movie Explorer](https://movie-explorer-sigma.vercel.app)
 
-####for serve or build by your own
+### ⚙️ for serve or build by your own
 after get project files:
 
 ```
