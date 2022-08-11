@@ -1,0 +1,68 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 15rem;
+  margin: 1rem;
+  border-radius: 0.7rem;
+  overflow: hidden;
+
+  &__header {
+    overflow: hidden;
+    height: 20rem;
+    width: 100%;
+    background-size: cover;
+
+    &__image {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 1.1rem;
+
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.8rem;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 0.95rem;
+  }
+
+  &__ratings {
+    font-weight: 500;
+    font-size: 0.7rem;
+
+    & span {
+      color: #2196f3;
+      font-size: 0.8rem;
+      margin-right: 0.1rem;
+    }
+  }
+
+  &__release-date {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & label {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 0.7rem;
+    }
+
+    & span {
+      font-weight: 700;
+      font-size: 0.75rem;
+    }
+  }
+}
