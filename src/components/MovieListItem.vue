@@ -2,6 +2,10 @@
 import { MovieItem } from '@/types';
 
 defineProps<{ movie: MovieItem }>();
+
+function getPosterSrc(posterPath: string) {
+  return `${import.meta.env.VITE_IMAGE_BASE_URL}/w185${posterPath}`;
+}
 </script>
 
 <template>
@@ -9,7 +13,7 @@ defineProps<{ movie: MovieItem }>();
     <div class="card__header">
       <img
         class="card__header__image"
-        :src="`https://image.tmdb.org/t/p/w185${movie.poster_path}`"
+        :src="getPosterSrc(movie.poster_path)"
         :alt="`${movie.title} poster`"
       />
     </div>
